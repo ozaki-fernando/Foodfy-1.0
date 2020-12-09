@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+:root{
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-rose: #fbdfdb;
+    --color-gray: #777777;
+    --color-footer: #eeeeee;
+    --color-gray2: #444444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+header{
+    padding: 30px;
+}
+.links{
+    font-family: 'Roboto', sans-serif;
+    font-size: 70%;
+    line-height: 80%;
+    text-align: left;
+    margin: auto;
+    
+}
+.links img{
+    padding: 0 6% 0 10%;
+    width: 8%;
+}
+.links a{
+    text-decoration: none;
+    padding: 15px;
+}
+.links a:hover{
+    color: var(--color-rose);
+    transition: color 600ms;
+}
+#wrapper{
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    background: var(--color-rose);
+    width: 78%;
+    height: 40%;
+    border-radius: 15px;
+    position: absolute;
+    left: 12%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    max-width: 305px;
+    max-height: 18px;
+    position: relative;
+    left: 17%;
+    top: 80%;
+}
+.main img{
+    width: 40%;
+    height: 200%;
+    position: relative;
+    left: 40%;
+    top: 12%;
+}
+.main p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 80%;
+    line-height: 90%;
+    opacity: 50%;
+    max-width: 316px;
+    max-height: 100px;
+    padding-top: 5%;
+    position: relative;
+    left: 17%;
+    bottom: 0;
+}
+.hot{
+    font-size: 112%;
+    padding: 30px;
+    position: absolute;
+    left: 12%;
+    top: 55%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card img{
+    width: 70%;
+    height: 60%;
+    border-radius: 15px;
+}
+.card h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 110%;
+    line-height: 120%;
+}
+.card p{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-gray);
+    font-size: 70%;
+    line-height: 80%;
+}
+.right{
+    background: var(--color-footer);
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: -65%;
+}
+.right p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #999999;
+    font-size: 70%;
+    line-height: 70%;
+    text-align: center;
+    padding: 2%;
+}
+/*---about---*/
+#content{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 68%;
+}
+#content h1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 1.5%;
+    position: relative;
+    left: 17%;
+    top: 10%;
+}
+#content h2{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 1.5%;
+    position: relative;
+    left: 17%;
+}
+#content p{
+    font-weight: normal;
+    color: var(--color-gray2);
+    font-size: 18px;
+    line-height: 28px;
+    padding: 1.5%;
+    position: relative;
+    left: 17%;
+}
+/*--receitas*/
+.recipe-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    left: 12%;
+}
+.card-content p{
+    padding-bottom: 3%;
+}
+
+/*---Modal---*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: var(--color-white);
+    width: 40%;
+    height: 40%;
+    margin: 35vh auto;
+    position: relative;
+    border-radius: 20px;
+}
+.modal .close-modal{
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    font-size: 16px;
+    line-height: 19px;
+    position: absolute;
+    right: 45%;
+    bottom: 5%;
+    cursor: pointer;
+}
+.modal-content img{
+    width: 60%;
+    height: 40%;
+    border-radius: 15px;
+    position: relative;
+    left: 20%;
+    top: 2vh;
+}
+.modal-content h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    position: relative;
+    top: 3vh;
+}
+.modal-content p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--color-gray);
+    text-align: center;
+    position: relative;
+    top: 3vh;
+}
+/*---Modal active---*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
